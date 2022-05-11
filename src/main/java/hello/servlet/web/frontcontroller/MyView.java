@@ -10,12 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 
 public class MyView {
 	
-	private String viewPath; //"/WEB-INF/views/new-form.jsp"にforwardする
+	private String viewPath; 
 	
 	public MyView(String viewPath) {
 		this.viewPath = viewPath;
 	}
 
+	// "/WEB-INF/views/new-form.jsp"にforwardする
 	public void render(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
 		dispatcher.forward(request, response);

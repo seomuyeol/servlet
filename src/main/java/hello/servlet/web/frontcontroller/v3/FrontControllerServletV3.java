@@ -16,7 +16,7 @@ import hello.servlet.web.frontcontroller.v3.controller.MemberFormControllerV3;
 import hello.servlet.web.frontcontroller.v3.controller.MemberListControllerV3;
 import hello.servlet.web.frontcontroller.v3.controller.MemberSaveControllerV3;
 
-// １．/front-controller/v2/members/new-form
+// １．/front-controller/v3/members/new-form
 @WebServlet(name = "frontControllerServletV3", urlPatterns = "/front-controller/v3/*")
 public class FrontControllerServletV3 extends HttpServlet {
 
